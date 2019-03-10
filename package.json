@@ -1,0 +1,39 @@
+{
+  "name": "gravity-points",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel serve index.html --open ",
+    "build": "parcel build --experimental-scope-hoisting --detailed-report index.html",
+    "lint": "tslint --config tslint.json --project tsconfig.json",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json"
+  },
+  "dependencies": {
+    "@types/dat.gui": "0.7.2",
+    "@types/node": "^11.11.0",
+    "dat.gui": "^0.7.5",
+    "seedrandom": "^3.0.1",
+    "tslint": "5.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.3.3333"
+  },
+  "prettier": {
+    "overrides": [
+      {
+        "files": "*.ts",
+        "options": {
+          "tabWidth": 4,
+          "singleQuote": true,
+          "printWidth": 120,
+          "trailingComma": "all",
+          "arrow-parens": "avoid"
+        }
+      }
+    ]
+  }
+}

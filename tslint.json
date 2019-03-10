@@ -1,0 +1,41 @@
+{
+    "defaultSeverity": "error",
+    "extends": ["tslint:recommended", "tslint-config-prettier"],
+    "jsRules": true,
+    "rules": {
+        //   "quotemark": [true, "single", "avoid-escape", "avoid-template"],
+        "object-literal-sort-keys": false,
+        //   "indent": [true, "spaces", 4],
+        "one-variable-per-declaration": false,
+        "no-var-requires": false, // https://palantir.github.io/tslint/rules/no-var-requires/
+        //   "no-consecutive-blank-lines": [ true, 2 ],
+        //   "one-line": [true, "check-open-brace"],
+        //       "whitespace": [true,
+        // //        "check-branch",
+        //         "check-decl",
+        //         "check-operator",
+        //         "check-module",
+        //         "check-separator",
+        //         "check-rest-spread",
+        //         "check-type",
+        //         "check-typecast",
+        //         "check-type-operator",
+        //         "check-preblock"
+        //       ],
+        "curly": [true, "ignore-same-line"],
+        "member-ordering": false,
+        "ordered-imports": false,
+        "variable-name": [
+            true,
+            "check-format",
+            "allow-leading-underscore",
+            "allow-trailing-underscore",
+            "allow-pascal-case",
+            "allow-snake-case",
+            "ban-keywords"
+        ],
+        //   "arrow-parens": [true, "ban-single-arg-parens"],
+        "no-bitwise": false
+    },
+    "rulesDirectory": []
+}
